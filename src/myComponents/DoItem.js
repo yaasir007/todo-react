@@ -1,19 +1,19 @@
 import React from 'react'
-import { cardImage } from "../assets/card.jpg"
+import cardImage  from "../assets/card.jpg"
 
-export const DoItem = () => {
+export const DoItem = ({ todo }) => {
   return (
     <div className="card card-compact w-96 bg-base-100 shadow-xl">
       <figure>
-        <img src="{ cardImage }" alt="Shoes" />
+        <img src={cardImage} alt="Shoes" />
       </figure>
       <div className="card-body">
-        <h2 className="card-title">Shoes!</h2>
-        <p>If a dog chews shoes whose shoes does he choose?</p>
+        <h2 className="card-title">{todo.title}</h2>
+        <p>{todo.description}</p>
         <div className="card-actions justify-end">
-          <button className="btn btn-primary">Buy Now</button>
+          <button className="btn btn-warning">Delete</button>
         </div>
       </div>
     </div>
   );
-}
+};

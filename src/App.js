@@ -25,6 +25,26 @@ function App(props) {
       title: "Cap",
       description: "Hard Cap with different color combinations",
     },
+    {
+      number: 4,
+      title: "Cap",
+      description: "Hard Cap with different color combinations",
+    },
+    {
+      number: 5,
+      title: "Cap",
+      description: "Hard Cap with different color combinations",
+    },
+    {
+      number: 6,
+      title: "Cap",
+      description: "Hard Cap with different color combinations",
+    },
+    {
+      number: 7,
+      title: "Cap",
+      description: "Hard Cap with different color combinations",
+    },
   ];
 
   return (

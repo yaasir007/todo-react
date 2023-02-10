@@ -3,12 +3,12 @@ import { Header } from "./myComponents/Header";
 import { Todos } from "./myComponents/Todos";
 import { Footer } from "./myComponents/Footer";
 
-function App() {
+function App(props) {
   return (
     <>
-      <Header/>
-      <Todos/>
-      <Footer/>
+      <Header tabOne="Project" tabThree="Contact" />
+      <Todos />
+      <Footer />
     </>
   );
 }

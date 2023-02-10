@@ -1,10 +1,15 @@
 import './App.css';
+import { Header } from "./myComponents/Header";
+import { Todos } from "./myComponents/Todos";
+import { Footer } from "./myComponents/Footer";
 
 function App() {
   return (
-    <div className="bg-slate-800 flex justify-center w-full h-screen	items-center border-2 border-rose-500">
-      Hello World
-    </div>
+    <>
+      <Header/>
+      <Todos/>
+      <Footer/>
+    </>
   );
 }
 

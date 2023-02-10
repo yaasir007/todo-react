@@ -1,7 +1,7 @@
 import React from 'react'
 import cardImage  from "../assets/card.jpg"
 
-export const DoItem = ({ todo }) => {
+export const DoItem = ({ todo, onDelete }) => {
   return (
     <div className="card card-compact w-96 bg-base-100 shadow-xl">
       <figure>
@@ -11,7 +11,10 @@ export const DoItem = ({ todo }) => {
         <h2 className="card-title">{todo.title}</h2>
         <p>{todo.description}</p>
         <div className="card-actions justify-end">
-          <button className="btn btn-warning">Delete</button>
+          {/* The function onDelete will be called only when clicked, not when the page will rendered  */}
+          <button className="btn btn-warning" onClick={ () => {onDelete(todo)} }>
+            Delete
+          </button>
         </div>
       </div>
     </div>

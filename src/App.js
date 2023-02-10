@@ -4,6 +4,11 @@ import { Todos } from "./myComponents/Todos";
 import { Footer } from "./myComponents/Footer";
 
 function App(props) {
+  const deleteItem = (singleTodo) => {
+    console.log("Delete function is working", singleTodo);
+  }
+
+
   let todos = [
     {
       number: 1,
@@ -22,13 +27,10 @@ function App(props) {
     },
   ];
 
-
-
-
   return (
     <>
       <Header tabOne="Project" tabThree="Contact" />
-      <Todos todos={todos} />
+      <Todos todos={todos} onDelete={deleteItem} />
       <Footer />
     </>
   );

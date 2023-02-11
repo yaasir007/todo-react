@@ -12,8 +12,9 @@ function App(props) {
   let todos = [
     {
       number: 1,
-      title: "Shoes",
-      description: "Nice Shoes with different color combinations",
+      title: "Ergonomic Office Chair",
+      description:
+        "Stay comfortable and productive with this adjustable and supportive ergonomic office chair",
     },
     {
       number: 2,

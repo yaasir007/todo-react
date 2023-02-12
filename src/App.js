@@ -1,15 +1,17 @@
-import { React, useState } from "react";
+import React, { useState } from "react";
 import './App.css';
 import { Header } from "./myComponents/Header";
 import { Todos } from "./myComponents/Todos";
 import { Footer } from "./myComponents/Footer";
 
 function App(props) {
-  const deleteItem = (singleTodo) => {
-    console.log("Delete function is working", singleTodo);
-  }
+  const [deleteItem, setdeleteItem] = useState();
 
-  let todos = [
+  //const deleteItem = (singleTodo) => {
+    //console.log("Delete function is working", singleTodo);
+  //}
+
+  const [todos, setTodos] = useState([
     {
       number: 1,
       title: "Ergonomic Office Chair",
@@ -106,7 +108,7 @@ function App(props) {
       description:
         "Monitor your weight and body composition with this smart and accurate digital scale",
     },
-  ];
+  ]);
 
   return (
     <>

@@ -5,11 +5,13 @@ import { Todos } from "./myComponents/Todos";
 import { Footer } from "./myComponents/Footer";
 
 function App(props) {
-  const [deleteItem, setdeleteItem] = useState();
 
-  //const deleteItem = (singleTodo) => {
-    //console.log("Delete function is working", singleTodo);
-  //}
+  //delete function is working because of useState
+  const deleteItem = (todo) => {
+    setTodos(todos.filter((e) => {
+      return e !== todo;
+    }))
+  }
 
   const [todos, setTodos] = useState([
     {

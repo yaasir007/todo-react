@@ -1,3 +1,4 @@
+import { React, useState } from "react";
 import './App.css';
 import { Header } from "./myComponents/Header";
 import { Todos } from "./myComponents/Todos";
@@ -7,7 +8,6 @@ function App(props) {
   const deleteItem = (singleTodo) => {
     console.log("Delete function is working", singleTodo);
   }
-
 
   let todos = [
     {
